@@ -1,0 +1,78 @@
+
+   Exercise-1
+   _____________
+
+1. create table SEMP
+   (
+    EMPNO CHAR(4),
+    EMPNAME CHAR(20),
+    BASIC FLOAT(9,2),
+    DEPTNO CHAR(2),
+    DEPTHEAD CHAR(4)
+    );
+
+2.  create table SDEPT
+    (
+     DEPTNO CHAR(2),
+     DEPTNAME CHAR(15)
+    );
+
+3.  insert into SDEPT values
+    ('10', 'Development'),
+    ( '20', 'Training' );
+  
+4.  insert into SEMP values
+    ('0001', 'SUNIL', '6000', '10',NULL),
+    ('0002', 'HIREN', '8000', '20',NULL),
+    ('0003', 'ALI', '4000', '10', '0001')
+    ('0004', 'GEORGE', '6000',NULL, '0002');
+
+5.  create table S
+    (
+     `S#` char(5), 
+      Sname varchar(25),
+      Status int(5),
+      City varchar(20)
+     );
+
+  create table p
+    (
+     `P#` char(5), 
+      Pname varchar(25),
+      color varchar(10),
+      weight float(4,2),
+      City varchar(20)
+     );
+
+    create table J
+     ( 
+      `J#` char(5),
+       Jname varchar(15),
+       City  varchar(10)
+     );
+     
+     create table SPJ
+     ( 
+      `S#` char(5),
+      `P#` char(5),
+      `J#` char(5),
+       Qty int(10) 
+      );
+
+6.  Select * from S;
+
+7.  Select S#,SName from S;
+
+8.  Select  PNAME,COLOR from P 
+    where CITY="London"
+
+9.  Select * from S 
+    where City="London"
+
+10. Select * from S 
+    where City="Paris" OR City="London"  
+
+11. Select * from P
+    where City="Athens"
+
+12.
