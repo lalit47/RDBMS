@@ -4,37 +4,37 @@
 
 1. Display all the Supplier names with the initial letter capital.
 
-   SELECT  sname FROM SUPPLIER where substr(sname,1); 
+->   SELECT  sname FROM SUPPLIER where substr(sname,1); 
              
 2. Display all the Supplier names in upper case.
  
-   SELECT upper(sname) as sname FROM SUPPLIER;  
+->   SELECT upper(sname) as sname FROM SUPPLIER;  
 
 3. Display all the Supplier names in lower case.
 
-   SELECT lower(sname) as sname from supplier;
+->  SELECT lower(sname) as sname from supplier;
 
 4. Display all the Supplier names padded to 25 characters, with spaces on the left.
 
-   SELECT LPAD(SNAME,25,' ') FROM SUPPLIER;
+->  SELECT LPAD(SNAME,25,' ') FROM SUPPLIER;
 
 5. Display all the Supplier names (with ‘la’ replaced by ‘ro’).
    HINT: REPLACE.
 
-   SELECT REPLACE(SNAME,'la','ro') from SUPPLIER; 
+->   SELECT REPLACE(SNAME,'la','ro') from SUPPLIER; 
 
 6. Implement the above command such that ‘l’ is replaced with ‘r’ and ‘a’ is replaced
    with ‘o’.
 
-   SELECT translate(ename,'la','ro') from SUPPLIER;
+->   SELECT translate(ename,'la','ro') from SUPPLIER;
 
 7. Display the Supplier names and the lengths of the names.
 
-   SELECT LENGTH(SNAME) FROM SUPPLIER;
+->   SELECT LENGTH(SNAME) FROM SUPPLIER;
 
 8. Use the soundex function to search for a supplier by the name of ‘BLOKE’.
 
-   SELECT * FROM SUPPLIER WHERE SOUNDEX(SNAME)=SOUNDEX('BLOKE');
+->   SELECT * FROM SUPPLIER WHERE SOUNDEX(SNAME)=SOUNDEX('BLOKE');
 
 9. Display the Supplier name and the status (as Ten, Twenty, Thirty, etc.).
 
