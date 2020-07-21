@@ -38,4 +38,13 @@
 
 9. Display the Supplier name and the status (as Ten, Twenty, Thirty, etc.).
 
+-> SELECT SNAME,CASE 
+         WHEN STATUS=10 THEN 'TEN'
+         WHEN STATUS=20 THEN 'TWENTY' 
+         WHEN STATUS=30 THEN 'THIRTY'      
+          END
+          FROM SUPPLIERS;
+
 10. Display the current day (e.g. Thursday). 
+
+-> SELECT DAYNAME(SYSDATE()) FROM DUAL;
