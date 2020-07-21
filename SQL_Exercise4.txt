@@ -1,0 +1,55 @@
+
+                                                SQL Exercise 4
+                                              -------------------
+1. Display the minimum Status in the Supplier table.
+
+->   SELECT MIN(STATUS) FROM SUPPLIER;
+
+2. Display the maximum Weight in the Parts table.
+
+->   SELECT MAX(WEIGHT) FROM PARTS;
+
+3. Display the average Weight of the Parts.
+
+->   SELECT AVG(WEIGHT) FROM PARTS;
+
+4. Display the total Quantity sold for part ‘P1’.
+
+->   SELECT SUM(QTY) FROM SPJ WHERE P# ='P1';
+
+5. Display the total Quantity sold for each part.
+
+->   SELECT SUM(QTY), FROM SPJ group by Part;
+
+6. Display the average Quantity sold for each part.
+
+->   SELECT AVG(QTY) FROM SPJ GROUP BY PART;
+
+7. Display the maximum Quantity sold for each part, provided the maximum Quantity
+   is greater than 800.
+ 
+->   SELECT MAX(QTY) FROM SPJ WHERE QTY>800 GROUP BY PART;
+ 
+8. Display the Status and the count of Suppliers with that Status.
+
+->   SELECT STATUS,COUNT(SNUM) FROM SUPPLIERS GROUP BY STATUS;
+
+9. Display the count of Projects going on in different cities.
+
+->   SELECT COUNT(J#),city FROM PROJECTS group by city.
+
+10. What is the difference between COUNT(Status) and COUNT(*) ?
+
+->    COUNT(status) return us count of status with values only
+    whereas COUNT(*) return us count of status with values 
+    as well as count of NULL values present in the status column.
+
+11. Display the Status and the Count of Suppliers with that Status in the following format
+    as shown below:-
+
+    Status Count
+    Ten 1
+    Twenty 2
+    Thirty 3 
+    
+->     SELECT STATUS,COUNT(SNUM) FROM SUPPLIERS GROUP BY STATUS;
