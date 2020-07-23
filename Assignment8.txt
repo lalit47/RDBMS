@@ -13,8 +13,7 @@
    Put the output in this form:
    For the city (city), the highest rating is : (rating).
 
-->   SELECT Case
-   when   
+->   SELECT CITY ,MAX(RATING) FROM CUSTOMERS GROUPBY CITY;
 
 3) Write a query that lists customers in descending order of rating. Output the rating
    field first, followed by the customer’s name and number.
